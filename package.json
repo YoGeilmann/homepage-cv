@@ -1,0 +1,23 @@
+{
+  "name": "homepage-cv",
+  "version": "1.0.0",
+  "description": "A personal homepage and CV website",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoGeilmann/homepage-cv.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/YoGeilmann/homepage-cv/issues"
+  },
+  "homepage": "https://github.com/YoGeilmann/homepage-cv#readme"
+}

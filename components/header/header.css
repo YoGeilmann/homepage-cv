@@ -1,0 +1,23 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    height: 300px;
+    display: flex;
+}
+
+.header-image {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}

@@ -1,16 +1,21 @@
+@import url('../../css/colors.css');
+
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    height: 300px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: left;
     display: flex;
+    justify-content: space-between;
 }
 
 .header-image {
-    width: 30%;
+    width: 33%;
     max-width: 300px;
     height: auto;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
@@ -19,5 +24,16 @@ img {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    border: 5px solid #fff;
+    border: 5px solid var(--secondary-color);
 }
+
+.header-info {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+}
+
+header, .header-info-name, .header-info-jobtitle, .header-info-contact {
+    border-bottom: 3px solid var(--border-color);
+}
+

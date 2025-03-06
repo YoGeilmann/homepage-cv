@@ -6,6 +6,8 @@ header {
     text-align: left;
     display: flex;
     justify-content: space-between;
+    border-bottom: 3px solid var(--border-color);
+    max-width: 1100px;
 }
 
 .header-image {
@@ -24,7 +26,7 @@ img {
     display: block;
     margin: 0 auto;
     border-radius: 50%;
-    border: 5px solid var(--secondary-color);
+    border: 3px solid var(--secondary-color);
 }
 
 .header-info {
@@ -33,7 +35,115 @@ img {
     flex-direction: column;
 }
 
-header, .header-info-name, .header-info-jobtitle, .header-info-contact {
+.header-info-name, .header-info-jobtitle, .header-info-contact, .header-info-status {
+    padding-left: 20px;
+    min-height: 4.5em;
+    display: flex;
+    align-items: center;
     border-bottom: 3px solid var(--border-color);
 }
 
+.header-info-status {
+    border-bottom: none;
+}
+
+.header-info-jobtitle p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin: 10px 0;
+}
+
+.header-info-contact, .header-info-status {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-info-contact-item, .header-info-status-item {
+    width: 50%;
+    display: flex;
+    min-width: 261px;
+}
+
+.header-info-status-item {
+    margin-top: 10px;
+}
+
+.header-info-status-item:last-child {
+    margin: 10px 0;
+}
+
+.header-info-contact button {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.header-info-contact button i {
+    margin-right: 10px;
+}
+
+.header-info-contact button:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.header-info-contact button:active {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.header-info-status-item i, .header-info-name h1, .header-info-jobtitle p {
+    margin-left: 20px;
+}
+
+.header-info-status-item p {
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 898px) {
+    .header-info-contact-item:last-child {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-image, .header-info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header-info-name, .header-info-jobtitle, .header-info-contact, .header-info-status {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 531px) {
+
+}
+
+@media (max-width: 480px) {
+    .header-info-jobtitle p {
+        font-size: 1.2em;
+    }
+
+    .header-info-contact button {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+}

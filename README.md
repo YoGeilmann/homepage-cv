@@ -11,7 +11,7 @@
 
 3. **Navigate to your project directory:**
    ```sh
-   cd /Users/snipes/workspace/homepage cv
+   cd /homepage cv
    ```
 
 4. **Initialize a new npm project:**

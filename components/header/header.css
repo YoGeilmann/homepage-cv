@@ -3,36 +3,36 @@
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    text-align: left;
     display: flex;
     justify-content: space-between;
     border-bottom: 3px solid var(--border-color);
-    max-width: 1100px;
+}
+
+.header-image, .header-info {
+    display: flex;
+    width: 100%;
 }
 
 .header-image {
-    width: 33%;
-    max-width: 300px;
+    flex-grow: 1;
+    max-width: 26%;
+    margin: 10px auto 10px 20px;
     height: auto;
-    padding: 20px 5%;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-img {
+.portrait {
     width: 100%;
     height: auto;
-    display: block;
     margin: 0 auto;
     border-radius: 50%;
     border: 3px solid var(--secondary-color);
 }
 
 .header-info {
-    width: 67%;
-    display: flex;
+    max-width: 67%;
     flex-direction: column;
+    flex-grow: 2;
 }
 
 .header-info-name, .header-info-jobtitle, .header-info-contact, .header-info-status {
@@ -47,7 +47,7 @@ img {
     border-bottom: none;
 }
 
-.header-info-jobtitle p {
+.header-info-jobtitle h2 {
     font-size: 1.5em;
     font-weight: bold;
     color: var(--accent-color);
@@ -101,7 +101,7 @@ img {
     border-color: var(--accent-color);
 }
 
-.header-info-status-item i, .header-info-name h1, .header-info-jobtitle p {
+.header-info-status-item i, .header-info-name h1, .header-info-jobtitle h2 {
     margin-left: 20px;
 }
 

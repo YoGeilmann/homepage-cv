@@ -1,0 +1,34 @@
+@import url(../../css/colors.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    display: flex;
+    border-bottom: 3px solid var(--border-color);
+}
+
+.section-title, .section-content {
+    display: flex;
+}
+
+.section-title {
+    background-color: var(--side-color);
+    flex-grow: 1;
+}
+
+.section-content {
+    background-color: var(--secondary-color);
+    flex-grow: 2;
+    max-width: 67%;
+    flex-direction: column;
+}
+
+.section-title h3, .section-content p {
+    padding-left: 20px;
+}
